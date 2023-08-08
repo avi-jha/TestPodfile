@@ -20,14 +20,15 @@ enum actionType {
 }
 
 @IBDesignable public class EditTextField: UITextField {
+    public func PrintTexts(name: String, age: Int, salary: Float) {
+        print("age is \(age)")
+        print("name is \(name)")
+        print("salary is \(salary)")
+    }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }
 
-public func PrintTexts(name: String, age: Int, salary: Float) {
-    print("age is \(age)")
-    print("name is \(name)")
-    print("salary is \(salary)")
-}
+
