@@ -20,18 +20,6 @@ enum actionType {
 }
 
 @IBDesignable public class EditTextField: UITextField {
-    private var placeHolderView = UIView()
-    private var placeHolderLabel = UILabel()
-    private var isFocusTextField: Bool = false
-    private var placeHolderValue: String = ""
-    
-//    public override init(frame: CGRect) {
-//        super.init(frame: frame)
-//        self.placeHolderValue = super.placeholder ?? ""
-//        print("here")
-//    }
-    
-   
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
