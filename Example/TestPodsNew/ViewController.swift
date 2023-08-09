@@ -16,7 +16,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        PrintTexts(name: "avi", age: 10, salary: 100.0)
+        let yourLibrary = YourLibrary(greeting: "Hello, CocoaPod users!")
+        yourLibrary.printUserData(name: "John", age: 25)
         
     }
 

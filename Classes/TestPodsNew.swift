@@ -9,13 +9,16 @@ import Foundation
 
 public class YourLibrary {
     
-    public init() {
-        // Initialization code
-    }
-    
-    public func printUserData(name: String, age: Int) {
-        print("User's name: \(name)")
-        print("User's age: \(age)")
-    }
+    public var greeting: String
+       
+       public init(greeting: String) {
+           self.greeting = greeting
+       }
+       
+       public func printUserData(name: String, age: Int) {
+           print("User's name: \(name)")
+           print("User's age: \(age)")
+           print(greeting)
+       }
 }
 
