@@ -7,18 +7,17 @@
 
 import Foundation
 
-public class YourLibrary {
+@objc public class YourLibrary: NSObject {
     
-    public var greeting: String
+//    static var greeting: String = ""
+//
+//       public init(greeting: String) {
+//           YourLibrary.greeting = greeting
+//       }
        
-       public init(greeting: String) {
-           self.greeting = greeting
-       }
-       
-       public func printUserData(name: String, age: Int) {
-           print("User's name: \(name)")
-           print("User's age: \(age)")
-           print(greeting)
+       @objc public class func printUserData(name: String, age: Int) {
+//           print("User's name: \(name)")
+//           print("User's age: \(age)")
+           print("greeting")
        }
 }
-
